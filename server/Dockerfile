@@ -17,17 +17,14 @@ RUN apk update && \
         perl-capture-tiny \
         perl-file-which \
         perl-file-chdir \
-        perl-pkgconfig \
         perl-ffi-checklib \
         perl-test-warnings \
         perl-test-fatal \
         perl-test-needs \
         perl-test2-suite \
-        perl-sort-versions \
         perl-path-tiny \
         perl-try-tiny \
         perl-term-table \
-        perl-any-uri-escape \
         perl-mojolicious \
         perl-file-slurper \
         libexif-dev \
