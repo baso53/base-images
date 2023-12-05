@@ -45,7 +45,7 @@ RUN apk update && \
         wget \
         zlib-dev \
         perl-app-cpanminus \
-        jq \
+        automake \
         bash \
         ffmpeg
         # ffmpeg-libavcodec \
