@@ -47,7 +47,8 @@ RUN apk update && \
         perl-app-cpanminus \
         automake \
         bash \
-        ffmpeg
+        ffmpeg \
+        libtool
         # ffmpeg-libavcodec \
         # ffmpeg-libavformat \
         # ffmpeg-libavutil \
