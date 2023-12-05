@@ -19,4 +19,6 @@ cd ImageMagick
 make -j$(nproc)
 make install
 cd .. && rm -rf ImageMagick
-ldconfig /usr/local/lib
+
+# In Alpine, ldconfig is typically /sbin/ldconfig
+/sbin/ldconfig /usr/local/lib

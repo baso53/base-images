@@ -19,4 +19,6 @@ autoreconf --install
 make -j$(nproc)
 make install
 cd .. && rm -rf libraw
-ldconfig /usr/local/lib
+
+# In Alpine, ldconfig is typically /sbin/ldconfig
+/sbin/ldconfig /usr/local/lib

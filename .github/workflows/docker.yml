@@ -23,16 +23,16 @@ permissions:
 
 jobs:
   build_and_push:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     strategy:
       max-parallel: 1
-      fail-fast: true
+      fail-fast: false
       matrix:
         target: ["dev", "prod"]
         include:
           - context: "server"
             image: "base-server"
-            platforms: "linux/amd64,linux/arm64"
+            platforms: "linux/arm32v6"
 
     steps:
       - name: Checkout

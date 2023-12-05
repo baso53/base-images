@@ -19,4 +19,6 @@ cd build
 # ninja test  # tests set concurrency too high for arm/v7
 ninja install
 cd .. && rm -rf libvips
-ldconfig /usr/local/lib
+
+# In Alpine, ldconfig is typically /sbin/ldconfig
+/sbin/ldconfig /usr/local/lib
